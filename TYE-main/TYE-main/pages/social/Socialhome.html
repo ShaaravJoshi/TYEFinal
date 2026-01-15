@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social - TYE Platform</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="brand-logo">TYE Social</div>
+            <div class="nav-links">
+                <button onclick="window.location.href='../home.html'">Access Dashboard</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="stack-container">
+        <div class="card-stack" id="card-stack-container" data-type="social">
+            <!-- Cards will be injected here by JS -->
+        </div>
+
+        <div class="card-actions">
+            <button id="pass-btn" class="action-btn btn-pass" aria-label="Pass">✖</button>
+            <button id="like-btn" class="action-btn btn-like" aria-label="Connect">♥</button>
+        </div>
+    </main>
+
+    <script type="module" src="../../src/js/index.js"></script>
+</body>
+
+</html>

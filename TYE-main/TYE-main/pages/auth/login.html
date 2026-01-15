@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TYE - Login to access your professional dashboard">
+    <title>Login - TYE Platform</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="card auth-box">
+            <div class="auth-header">
+                <h1>TYE</h1>
+                <p style="color: var(--color-text-muted)">Sign in to your account</p>
+            </div>
+
+            <form id="loginForm" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="admin" required
+                        autocomplete="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="password" required
+                        autocomplete="current-password">
+                </div>
+
+                <div id="correct" style="color: var(--color-danger); margin-bottom: 1rem; min-height: 1.5rem;"
+                    role="alert" aria-live="polite"></div>
+
+                <button type="submit" id="Login" class="btn btn-primary" style="width: 100%">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="../../src/js/index.js"></script>
+</body>
+
+</html>

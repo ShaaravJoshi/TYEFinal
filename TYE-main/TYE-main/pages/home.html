@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard - TYE Platform</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="brand-logo">TYE Dashboard</div>
+            <div class="nav-links">
+                <button onclick="window.location.href='auth/profile.html'">Profile</button>
+                <button class="active">Dashboard</button>
+                <button onclick="window.location.href='social/Socialhome.html'">Social</button>
+                <button onclick="window.location.href='job/Jobhome.html'">Jobs</button>
+                <button onclick="window.location.href='auth/login.html'"
+                    style="color: var(--color-danger)">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1>Welcome back, User</h1>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Your comprehensive platform for
+                professional growth and networking.</p>
+        </section>
+
+        <div class="info-grid">
+            <div class="card info-card" onclick="window.location.href='social/Socialhome.html'">
+                <div class="card-title" style="color: var(--color-accent)">Connect</div>
+                <p>Expand your professional network with our curated matching system.</p>
+            </div>
+
+            <div class="card info-card" onclick="window.location.href='job/Jobhome.html'">
+                <div class="card-title" style="color: var(--color-success)">Job Search</div>
+                <p>Find your next career opportunity tailored to your skills.</p>
+            </div>
+
+            <div class="card info-card" id="about-card">
+                <div class="card-title">About Us</div>
+                <p>TYE is dedicated to fostering meaningful career growth for professionals worldwide.</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../src/js/index.js"></script>
+</body>
+
+</html>
